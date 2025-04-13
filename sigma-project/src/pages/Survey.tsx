@@ -14,7 +14,7 @@ export default function Survey() {
           <label>2. What area are you planning to work on?</label>
           <div className="checkbox-group">
             <label><input type="checkbox" /> Productivity</label>
-            <label><input type="checkbox" /> Health</label>
+            <label><input type="checkbox" /> Aki</label>
             <label><input type="checkbox" /> Relationships</label>
             <label><input type="checkbox" /> Mental well-being</label>
           </div>
