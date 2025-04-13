@@ -3,25 +3,40 @@ import '../styles/Survey.css';
 export default function Survey() {
   return (
     <main className="survey-page">
-
       <form className="survey-form">
+        <h2>Survey</h2>
         <div className="form-group">
-          <label>1. How are you feeling today?</label>
-          <input type="text" placeholder="Type your answer..." />
-        </div>
-
-        <div className="form-group">
-          <label>2. What area are you planning to work on?</label>
-          <div className="checkbox-group">
-            <label><input type="checkbox" /> Productivity</label>
-            <label><input type="checkbox" /> Aki</label>
-            <label><input type="checkbox" /> Relationships</label>
-            <label><input type="checkbox" /> Mental well-being</label>
+          <label className="question-label">
+            1. What topic resonates with your goals?
+          </label>
+          <div className="radio-group">
+            <label>
+              <input type="radio" name="goalTopic" value="coming-of-age" />
+              Coming of Age – personal growth, self-discovery, youth to adulthood
+            </label>
+            <label>
+              <input type="radio" name="goalTopic" value="revenge" />
+              Revenge or Justice – moral dilemmas, vigilante characters
+            </label>
+            <label>
+              <input type="radio" name="goalTopic" value="self-help" />
+              Self-Help – motivation, productivity, confidence, mental wellness
+            </label>
+            <label>
+              <input type="radio" name="goalTopic" value="business" />
+              Business & Money – entrepreneurship, investing, success stories
+            </label>
+            <label>
+              <input type="radio" name="goalTopic" value="health" />
+              Health & Wellness – fitness, nutrition, mental health
+            </label>
+            <label>
+              <input type="radio" name="goalTopic" value="survival" />
+              Survival – characters overcoming disasters or harsh environments
+            </label>
           </div>
         </div>
-
-
-        <button type="submit">Submit</button>
+        <button type="submit">Next</button>
       </form>
     </main>
   );
